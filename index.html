@@ -13,7 +13,8 @@
 </head>
 
 <body>
-  <div class="container-fluid bg-secondary text-primary"><!-- HEADER -->
+  <!-- HEADER ---------------------------------------------------------------------------------->
+  <div class="container-fluid bg-secondary text-primary">
     <div class="row">
       <div class="col-12 col-md-4 py-1 d-flex align-items-center justify-content-md-center">
         <span class="px-2 material-symbols-outlined">call</span>
@@ -29,11 +30,13 @@
       </div>
     </div>
   </div>
-
+  <!-- NavBar ---------------------------------------------------------------------------------->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand ps-2" href="#"><img src="Forensix-Design-Logo.svg" alt="Forensix Design Logo" style="height: calc(10vw); max-height: 60px"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand ps-2" href="#"><img src="Forensix-Design-Logo.svg" alt="Forensix Design Logo"
+          style="height: calc(10vw); max-height: 60px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -42,7 +45,8 @@
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">RESERVED</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               SERVICES
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -51,17 +55,20 @@
               <li><a class="dropdown-item disabled" href="#">Wind Damage Repair Design</a></li>
               <li><a class="dropdown-item disabled" href="#">Earthquake Damage Repair Design</a></li>
               <li><a class="dropdown-item" href="#">California Balcony Inspections</a></li>
-              <li><hr class="dropdown-divider"></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
               <li><a class="dropdown-item disabled" href="#">Property Claim Response</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               PORTFOLIO
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Overview</a></li>
-              <li><a class="dropdown-item disabled" href="#">Project A</a></li>              
+              <li><a class="dropdown-item disabled" href="#">Project A</a></li>
               <li><a class="dropdown-item disabled" href="#">Project B</a></li>
             </ul>
           </li>
@@ -79,6 +86,69 @@
     </div>
   </nav>
 
+  <!-- Carousel ---------------------------------------------------------------------------------->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div style="
+          height: 40vh; width: 100vw; 
+          background-image: url(pics/slide1.jpg);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+          box-shadow: inset 0 0 0 100vmax rgba(0,16,32, 0.7);">
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div style="
+          height: 40vh; width: 100vw; 
+          background-image: url(pics/slide2.jpg);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+          box-shadow: inset 0 0 0 100vmax rgba(0,16,32, .7);">
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div style="
+          height: 40vh; width: 100vw; 
+          background-image: url(pics/slide3.jpg);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+          box-shadow: inset 0 0 0 100vmax rgba(0,16,32, .7);">
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
   <h1>Hello, world!</h1>
   <p>Is this Open Sans?</p>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
